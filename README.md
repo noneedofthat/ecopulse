@@ -107,10 +107,6 @@ See `.env.example` for required environment variables:
 - `VITE_FIREBASE_MESSAGING_SENDER_ID` - Firebase messaging sender ID
 - `VITE_FIREBASE_APP_ID` - Firebase app ID
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
 This project is open source and available under the MIT License.
