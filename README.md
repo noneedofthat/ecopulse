@@ -1,6 +1,7 @@
 # 🌱 EcoPulse
 
 A modern, human-centered web application that raises environmental awareness by aggregating and displaying real-time environment-related news.
+Access at: **[EcoPulse](https://climatex-ecopulse.netlify.app/)**
 
 ## Features
 
