@@ -4,7 +4,7 @@ A modern, human-centered web application that raises environmental awareness by 
 
 ## Features
 
-- 📰 Real-time environmental news from NewsAPI
+- 📰 Real-time environmental news from The Guardian
 - 🔐 Authentication (Email/Password + Google OAuth)
 - 🎨 Nature-inspired design with green and white tones
 - 🌓 Dark/Light mode toggle
@@ -31,7 +31,7 @@ A modern, human-centered web application that raises environmental awareness by 
 
 - Node.js 18+ and npm
 - Firebase account
-- NewsAPI.org API key
+- The Guardian API key
 
 ### Installation
 
@@ -47,7 +47,7 @@ A modern, human-centered web application that raises environmental awareness by 
    ```
 
 4. Configure your environment variables:
-   - Get NewsAPI key from https://newsapi.org
+   - Get The Guardian API key from https://open-platform.theguardian.com/
    - Set up Firebase project and get credentials
    - Add all credentials to `.env` file
 
@@ -58,7 +58,7 @@ Run the development server:
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+The app will be available at localhost
 
 ### Build
 
@@ -99,7 +99,7 @@ ecopulse/
 
 See `.env.example` for required environment variables:
 
-- `VITE_NEWS_API_KEY` - NewsAPI.org API key
+- `VITE_NEWS_API_KEY` - The Guardian API key
 - `VITE_FIREBASE_API_KEY` - Firebase API key
 - `VITE_FIREBASE_AUTH_DOMAIN` - Firebase auth domain
 - `VITE_FIREBASE_PROJECT_ID` - Firebase project ID
