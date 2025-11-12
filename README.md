@@ -117,6 +117,6 @@ This project is open source and available under the MIT License.
 
 ## Acknowledgments
 
-- News data provided by [NewsAPI.org](https://newsapi.org)
+- News data provided by [The Guardian](https://open-platform.theguardian.com/)
 - Icons from [Google Material Icons](https://fonts.google.com/icons)
 - Fonts from [Google Fonts](https://fonts.google.com)
