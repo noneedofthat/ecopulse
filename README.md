@@ -20,7 +20,7 @@ A modern, human-centered web application that raises environmental awareness by 
 - **Animation**: Framer Motion
 - **Authentication**: Firebase Auth
 - **Database**: Cloud Firestore
-- **News API**: NewsAPI.org
+- **News API**: The Guardian
 - **Routing**: React Router
 - **Icons**: Google Material Icons
 - **Fonts**: Google Fonts (Inter/Poppins)
