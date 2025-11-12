@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "text": "The Earth is what we all have in common.",
+    "author": "Wendell Berry",
+    "category": "environment"
+  },
+  {
+    "id": "2",
+    "text": "We won't have a society if we destroy the environment.",
+    "author": "Margaret Mead",
+    "category": "environment"
+  },
+  {
+    "id": "3",
+    "text": "The greatest threat to our planet is the belief that someone else will save it.",
+    "author": "Robert Swan",
+    "category": "sustainability"
+  },
+  {
+    "id": "4",
+    "text": "In every walk with nature, one receives far more than he seeks.",
+    "author": "John Muir",
+    "category": "nature"
+  },
+  {
+    "id": "5",
+    "text": "The environment is where we all meet; where we all have a mutual interest; it is the one thing all of us share.",
+    "author": "Lady Bird Johnson",
+    "category": "environment"
+  },
+  {
+    "id": "6",
+    "text": "What we are doing to the forests of the world is but a mirror reflection of what we are doing to ourselves and to one another.",
+    "author": "Mahatma Gandhi",
+    "category": "nature"
+  },
+  {
+    "id": "7",
+    "text": "The climate crisis has already been solved. We already have all the facts and solutions. All we have to do is wake up and change.",
+    "author": "Greta Thunberg",
+    "category": "sustainability"
+  },
+  {
+    "id": "8",
+    "text": "We do not inherit the Earth from our ancestors; we borrow it from our children.",
+    "author": "Native American Proverb",
+    "category": "sustainability"
+  },
+  {
+    "id": "9",
+    "text": "Look deep into nature, and then you will understand everything better.",
+    "author": "Albert Einstein",
+    "category": "nature"
+  },
+  {
+    "id": "10",
+    "text": "The Earth will not continue to offer its harvest, except with faithful stewardship.",
+    "author": "Pope John Paul II",
+    "category": "environment"
+  }
+]

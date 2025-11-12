@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "Reduce Plastic Use",
+    "description": "Bring reusable bags, bottles, and containers to reduce single-use plastic waste.",
+    "icon": "shopping_bag",
+    "category": "waste"
+  },
+  {
+    "id": "2",
+    "title": "Save Energy",
+    "description": "Turn off lights and unplug devices when not in use to conserve electricity.",
+    "icon": "lightbulb",
+    "category": "energy"
+  },
+  {
+    "id": "3",
+    "title": "Conserve Water",
+    "description": "Fix leaks and take shorter showers to reduce water consumption.",
+    "icon": "water_drop",
+    "category": "water"
+  },
+  {
+    "id": "4",
+    "title": "Use Public Transport",
+    "description": "Choose buses, trains, or carpooling to reduce carbon emissions.",
+    "icon": "directions_bus",
+    "category": "transport"
+  },
+  {
+    "id": "5",
+    "title": "Eat Plant-Based",
+    "description": "Incorporate more plant-based meals to reduce your carbon footprint.",
+    "icon": "restaurant",
+    "category": "food"
+  },
+  {
+    "id": "6",
+    "title": "Recycle Properly",
+    "description": "Sort your waste and recycle paper, plastic, glass, and metal correctly.",
+    "icon": "recycling",
+    "category": "waste"
+  },
+  {
+    "id": "7",
+    "title": "Support Local",
+    "description": "Buy local produce to reduce transportation emissions and support your community.",
+    "icon": "store",
+    "category": "food"
+  },
+  {
+    "id": "8",
+    "title": "Plant Trees",
+    "description": "Plant native trees and plants to improve air quality and support biodiversity.",
+    "icon": "park",
+    "category": "energy"
+  },
+  {
+    "id": "9",
+    "title": "Compost Organic Waste",
+    "description": "Turn food scraps into nutrient-rich compost for your garden.",
+    "icon": "compost",
+    "category": "waste"
+  },
+  {
+    "id": "10",
+    "title": "Choose Renewable Energy",
+    "description": "Switch to solar or wind energy providers when possible.",
+    "icon": "wb_sunny",
+    "category": "energy"
+  }
+]
