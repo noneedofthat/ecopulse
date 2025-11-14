@@ -8,7 +8,6 @@ Access at: **[EcoPulse](https://climatex-ecopulse.netlify.app/)**
 - 📰 Real-time environmental news from The Guardian
 - 🔐 Authentication (Email/Password + Google OAuth)
 - 🎨 Nature-inspired design with green and white tones
-- 🌓 Dark/Light mode toggle
 - 💬 User feedback system
 - 📱 Mobile-first responsive design
 - ♿ WCAG 2.1 accessibility compliant
