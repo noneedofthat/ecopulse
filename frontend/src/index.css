@@ -1,0 +1,265 @@
+/* ─── Google Fonts — must be first ──────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties (Design Tokens) ─────────────────────────────── */
+:root {
+  --color-forest-950:  #0d1f17;
+  --color-forest-900:  #1a3a2a;
+  --color-forest-800:  #1e4d35;
+  --color-forest-700:  #2d6a4f;
+  --color-forest-600:  #3a7d5e;
+  --color-forest-500:  #52b788;
+  --color-forest-400:  #74c69d;
+  --color-forest-300:  #95d5b2;
+  --color-forest-200:  #b7e4c7;
+  --color-forest-100:  #d8f3dc;
+  --color-forest-50:   #f0faf2;
+
+  --color-earth-700:   #6b4226;
+  --color-bark-500:    #7a6642;
+  --color-amber:       #d97706;
+
+  --font-display:      'Playfair Display', Georgia, serif;
+  --font-sans:         'DM Sans', sans-serif;
+
+  --shadow-card:       0 2px 16px 0 rgba(26,58,42,0.08);
+  --shadow-card-hover: 0 8px 32px 0 rgba(26,58,42,0.16);
+  --shadow-nav:        0 2px 24px 0 rgba(26,58,42,0.12);
+  --shadow-modal:      0 24px 64px 0 rgba(26,58,42,0.24);
+
+  --nav-height: 72px;
+}
+
+/* ─── Base Reset & Typography ────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-forest-50);
+    color: var(--color-forest-900);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  a {
+    color: var(--color-forest-700);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--color-forest-500);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-forest-50);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-forest-300);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-forest-500);
+  }
+}
+
+/* ─── Reusable Component Classes ─────────────────────────────────────────── */
+@layer components {
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-forest-700 text-white font-medium px-5 py-2.5 rounded-xl
+           hover:bg-forest-600 active:bg-forest-800
+           transition-all duration-200 shadow-sm hover:shadow-card
+           focus:outline-none focus:ring-2 focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-forest-100 text-forest-800 font-medium px-5 py-2.5 rounded-xl
+           hover:bg-forest-200 active:bg-forest-300
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-forest-400 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2
+           border-2 border-forest-700 text-forest-700 font-medium px-5 py-2.5 rounded-xl
+           hover:bg-forest-700 hover:text-white
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-forest-500 focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2
+           text-forest-700 font-medium px-4 py-2 rounded-xl
+           hover:bg-forest-100 active:bg-forest-200
+           transition-all duration-200;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover
+           transition-all duration-300 overflow-hidden;
+  }
+
+  .card-bordered {
+    @apply bg-white rounded-2xl border border-forest-100
+           hover:border-forest-300 transition-all duration-200;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-green {
+    @apply badge bg-forest-100 text-forest-800;
+  }
+
+  .badge-amber {
+    @apply badge bg-amber-100 text-amber-600;
+  }
+
+  /* Page container */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section header */
+  .section-title {
+    @apply font-display text-3xl md:text-4xl text-forest-900 font-bold;
+  }
+
+  .section-subtitle {
+    @apply text-forest-600 text-lg mt-2 font-sans;
+  }
+
+  /* Input */
+  .input-base {
+    @apply w-full bg-white border border-forest-200 rounded-xl px-4 py-2.5
+           text-forest-900 placeholder-forest-400
+           focus:outline-none focus:ring-2 focus:ring-forest-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  /* Divider */
+  .divider {
+    @apply border-t border-forest-100 my-6;
+  }
+
+  /* Overlay backdrop */
+  .modal-backdrop {
+    @apply fixed inset-0 bg-forest-950/40 backdrop-blur-sm z-50
+           flex items-center justify-center p-4;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply relative font-medium text-forest-100 hover:text-white
+           transition-colors duration-200 py-1;
+  }
+
+  .nav-link-active {
+    @apply text-white after:absolute after:bottom-0 after:left-0 after:right-0
+           after:h-0.5 after:bg-forest-300 after:rounded-full;
+  }
+
+  /* Leaf decoration */
+  .leaf-accent {
+    @apply w-2 h-2 rounded-full bg-forest-500 inline-block mr-2;
+  }
+}
+
+/* ─── Utility Overrides ──────────────────────────────────────────────────── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Leaflet map z-index fix */
+  .leaflet-container {
+    z-index: 0;
+  }
+}
+
+/* ─── Page transition ────────────────────────────────────────────────────── */
+.page-enter {
+  animation: fadeIn 0.35s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Modal animations ───────────────────────────────────────────────────── */
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out both;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

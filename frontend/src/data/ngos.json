@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "WWF-India",
+    "tagline": "Building a future where people and nature thrive",
+    "description": "WWF works to conserve nature and reduce the most pressing threats to the diversity of life on Earth. Our vision is to build a future where people live in harmony with nature.",
+    "category": "Wildlife",
+    "region": "India",
+    "website": "https://www.wwfindia.org",
+    "donateUrl": "https://donate.wwfindia.org/donate-to-wwf-india.php",
+    "logo": "🐼"
+  },
+  {
+    "id": 2,
+    "name": "Wildlife Trust of India",
+    "tagline": "Conserving India's natural heritage",
+    "description": "WTI is committed to the conservation of wildlife and its habitat. Working across India, WTI has been instrumental in protecting endangered species and their ecosystems.",
+    "category": "Wildlife",
+    "region": "India",
+    "website": "https://www.wti.org.in",
+    "donateUrl": "https://donation.wti.org.in/",
+    "logo": "🐅"
+  },
+  {
+    "id": 3,
+    "name": "The Nature Conservancy",
+    "tagline": "Protecting nature. Preserving life.",
+    "description": "A global environmental organization working to create a world where people and nature can thrive. We tackle climate change, protect lands and waters, and provide food and water sustainably.",
+    "category": "Conservation",
+    "region": "International",
+    "website": "https://www.nature.org",
+    "donateUrl": "https://preserve.nature.org/page/80429/donate/1",
+    "logo": "🌍"
+  },
+  {
+    "id": 4,
+    "name": "Greenpeace India",
+    "tagline": "Defending the natural world",
+    "description": "Greenpeace India campaigns for environmental protection and promotes peace. We investigate, expose and confront environmental abuse by governments and corporations.",
+    "category": "Climate",
+    "region": "India",
+    "website": "https://www.greenpeace.org/india/",
+    "donateUrl": "https://donate.greenpeace.in/",
+    "logo": "🌿"
+  },
+  {
+    "id": 5,
+    "name": "Ocean Conservancy",
+    "tagline": "Together for a healthy ocean",
+    "description": "Working to protect the ocean from today's greatest global challenges. We create evidence-based solutions for a healthy ocean and the wildlife and communities that depend on it.",
+    "category": "Ocean",
+    "region": "International",
+    "website": "https://oceanconservancy.org",
+    "donateUrl": "https://donate.oceanconservancy.org/page/177540/donate/1",
+    "logo": "🌊"
+  },
+  {
+    "id": 6,
+    "name": "Rainforest Alliance",
+    "tagline": "Working for a better future",
+    "description": "We're creating a more sustainable world by using social and market forces to protect nature and improve the lives of farmers and forest communities.",
+    "category": "Forest",
+    "region": "International",
+    "website": "https://www.rainforest-alliance.org",
+    "donateUrl": "https://www.rainforest-alliance.org",
+    "logo": "🌳"
+  },
+  {
+    "id": 7,
+    "name": "Centre for Science and Environment",
+    "tagline": "Research, advocacy, and capacity building",
+    "description": "CSE is a public interest research and advocacy organization based in New Delhi. We research into, lobby for and communicate the urgency of development that is both sustainable and equitable.",
+    "category": "Climate",
+    "region": "India",
+    "website": "https://www.cseindia.org",
+    "donateUrl": "https://www.cseindia.org/subscription/donation",
+    "logo": "🔬"
+  },
+  {
+    "id": 8,
+    "name": "350.org",
+    "tagline": "Building a global climate movement",
+    "description": "We're an international movement of ordinary people working to end the age of fossil fuels and build a world of community-led renewable energy for all.",
+    "category": "Renewable Energy",
+    "region": "International",
+    "website": "https://350.org",
+    "donateUrl": "https://350.org",
+    "logo": "☀️"
+  },
+  {
+    "id": 9,
+    "name": "Bombay Natural History Society",
+    "tagline": "Conservation through action and research",
+    "description": "BNHS is one of the largest non-governmental organizations in India engaged in conservation and biodiversity research. We promote the enjoyment and conservation of nature.",
+    "category": "Wildlife",
+    "region": "India",
+    "website": "https://www.bnhs.org",
+    "donateUrl": "https://www.bnhs.org/donate",
+    "logo": "🦅"
+  },
+  {
+    "id": 10,
+    "name": "Environmental Defense Fund",
+    "tagline": "Finding practical solutions to environmental problems",
+    "description": "We work on urgent threats spanning climate, oceans, ecosystems and health. Our scientists, economists and attorneys create practical solutions that win lasting political, economic and social support.",
+    "category": "Climate",
+    "region": "International",
+    "website": "https://www.edf.org",
+    "donateUrl": "https://www.edf.org",
+    "logo": "🌱"
+  },
+  {
+    "id": 11,
+    "name": "Sankalp India Foundation",
+    "tagline": "Empowering communities for sustainable development",
+    "description": "Working towards environmental conservation, renewable energy adoption, and sustainable livelihoods in rural India. We focus on community-led initiatives for a greener future.",
+    "category": "Renewable Energy",
+    "region": "India",
+    "website": "https://www.sankalpindia.net",
+    "donateUrl": "https://www.sankalpindia.net/webform/contribute-now",
+    "logo": "💡"
+  },
+  {
+    "id": 12,
+    "name": "Conservation International",
+    "tagline": "Protecting nature for humanity",
+    "description": "We protect nature for the benefit of humanity. Through science, policy, and partnerships, we spotlight and secure the most important places in nature for the climate, biodiversity, and people.",
+    "category": "Conservation",
+    "region": "International",
+    "website": "https://www.conservation.org/home-page",
+    "donateUrl": "https://www.conservation.org/home-page",
+    "logo": "🦋"
+  },
+  {
+    "id": 13,
+    "name": "Grow Trees",
+    "tagline": "Plant trees, grow hope",
+    "description": "India's largest tree plantation organization. We enable individuals and organizations to plant trees across India, contributing to reforestation, carbon offset, and rural employment.",
+    "category": "Forest",
+    "region": "India",
+    "website": "https://www.grow-trees.com",
+    "donateUrl": "https://www.grow-trees.com",
+    "logo": "🌲"
+  },
+  {
+    "id": 14,
+    "name": "International Fund for Animal Welfare",
+    "tagline": "Protecting animals in crisis",
+    "description": "IFAW rescues individual animals, safeguards populations, preserves habitats, and advocates for greater protections. We work across 40 countries to save and protect animals.",
+    "category": "Wildlife",
+    "region": "International",
+    "website": "https://www.ifaw.org",
+    "donateUrl": "https://www.ifaw.org/international",
+    "logo": "🐘"
+  },
+  {
+    "id": 15,
+    "name": "Kalpavriksh",
+    "tagline": "Environmental action and research",
+    "description": "A voluntary organization working on environmental and social issues in India. We focus on biodiversity conservation, community rights, and sustainable alternatives.",
+    "category": "Conservation",
+    "region": "India",
+    "website": "https://kalpavriksh.org",
+    "donateUrl": "https://kalpavriksh.org/donate/",
+    "logo": "🌾"
+  }
+]
