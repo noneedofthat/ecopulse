@@ -3,7 +3,7 @@ import axios from 'axios'
 /**
  * Central Axios instance — all API calls go through here.
  * Base URL resolves to the Vite dev proxy in development
- * and to the Railway backend URL in production.
+ * and to the Railway backend URL in production via VITE_API_URL.
  */
 const apiClient = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
