@@ -25,10 +25,14 @@ const useAuthStore = create((set) => ({
   // Sign in with Google
   signInWithGoogle: async () => {
     try {
+      const redirectUrl = import.meta.env.PROD 
+        ? 'https://ecopulse-frontend-cqtc.vercel.app/feedback'
+        : 'http://localhost:5173/feedback'
+      
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/feedback`,
+          redirectTo: redirectUrl,
         },
       })
       if (error) throw error
