@@ -34,7 +34,10 @@ const corsOptions = {
       'http://localhost:3000',
     ].filter(Boolean)
     
-    if (allowedOrigins.some(allowed => origin.startsWith(allowed))) {
+    // Also allow any Vercel preview deployments
+    const isVercelPreview = origin && origin.includes('.vercel.app')
+    
+    if (allowedOrigins.some(allowed => origin.startsWith(allowed)) || isVercelPreview) {
       callback(null, true)
     } else {
       console.log('CORS blocked origin:', origin)
