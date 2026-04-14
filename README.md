@@ -42,9 +42,14 @@ Real-time environmental news, global air quality monitoring, and conservation re
 
 ## Tech Stack
 
-**Frontend:** React, Vite, TailwindCSS, Zustand, React Router, Leaflet, Recharts  
-**Backend:** Node.js, Express, Axios  
-**Services:** Supabase, The Guardian API, Google Gemini AI, OpenWeatherMap API
+| Category | Technologies |
+|---|---|
+| **Frontend** | React 18, Vite 5, TailwindCSS, Zustand, React Router v6 |
+| **Backend** | Node.js 18+, Express 4.x, Axios |
+| **Database & Auth** | Supabase (PostgreSQL + Auth) |
+| **APIs** | The Guardian API, Google Gemini 2.5 Flash, OpenWeatherMap API |
+| **Maps & Charts** | React Leaflet, Recharts |
+| **Deployment** | Vercel (Frontend), Railway (Backend) |
 
 ---
 
