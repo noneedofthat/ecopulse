@@ -1,10 +1,32 @@
+<div align="center">
+
 # EcoPulse
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
-[![React Version](https://img.shields.io/badge/react-18.2.0-blue)](https://reactjs.org/)
+### Your Pulse on the Planet
 
-A full-stack environmental awareness platform featuring real-time news aggregation, global air quality monitoring, AI-powered summaries, NGO directory, and intelligent chatbot. Built with React, Node.js, and Supabase.
+Real-time environmental news, global air quality monitoring, and conservation resources powered by AI.
+
+<br/>
+
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+<br/>
+
+![Backend](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
+![Frontend](https://img.shields.io/badge/Frontend-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-Click%20Here-green?style=for-the-badge&logo=vercel&logoColor=white)](https://ecopulse-frontend-cqtc.vercel.app)
+
+</div>
+
+---
 
 ## Features
 
@@ -16,11 +38,15 @@ A full-stack environmental awareness platform featuring real-time news aggregati
 - User authentication via Supabase (Google OAuth)
 - Feedback system with database persistence
 
+---
+
 ## Tech Stack
 
 **Frontend:** React, Vite, TailwindCSS, Zustand, React Router, Leaflet, Recharts  
 **Backend:** Node.js, Express, Axios  
 **Services:** Supabase, The Guardian API, Google Gemini AI, OpenWeatherMap API
+
+---
 
 ## Quick Start
 
@@ -74,11 +100,15 @@ cd frontend && npm run dev
 
 5. Open http://localhost:5173
 
+---
+
 ## Deployment
 
 See [DEPLOY_QUICK_START.md](DEPLOY_QUICK_START.md) for deployment instructions.
 
 **Live Demo:** [https://ecopulse-frontend-cqtc.vercel.app](https://ecopulse-frontend-cqtc.vercel.app)
+
+---
 
 ## Project Structure
 
@@ -100,6 +130,8 @@ ecopulse/
 └── README.md
 ```
 
+---
+
 ## API Endpoints
 
 - `GET /api/health` - Health check
@@ -109,9 +141,13 @@ ecopulse/
 - `POST /api/chat/message` - Chat with AI
 - `POST /api/feedback` - Submit feedback
 
+---
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
+
+---
 
 ## Acknowledgments
 
@@ -122,4 +158,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
+<div align="center">
+
 **Making environmental awareness accessible to everyone.**
+
+<sub>Built with the MERN stack + Supabase</sub>
+
+</div>
