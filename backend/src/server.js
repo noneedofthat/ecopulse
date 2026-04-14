@@ -16,6 +16,9 @@ import feedbackRouter from './routes/feedback.js'
 const app  = express()
 const PORT = process.env.PORT || 4000
 
+// ── Trust proxy (required for Railway/Render/Heroku) ──────────────────────
+app.set('trust proxy', 1)
+
 // ── Security & parsing middleware ──────────────────────────────────────────
 app.use(helmet())
 app.use(cors({
