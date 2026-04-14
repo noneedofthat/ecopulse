@@ -14,6 +14,11 @@ const apiClient = axios.create({
   withCredentials: true,   // sends HTTP-only cookies for auth
 })
 
+// Debug: Log the API URL being used (only in development)
+if (import.meta.env.DEV) {
+  console.log('API Base URL:', import.meta.env.VITE_API_URL || '/api (using proxy)')
+}
+
 // ── Request interceptor — attach JWT if stored ────────────────────────────
 apiClient.interceptors.request.use(
   (config) => {
