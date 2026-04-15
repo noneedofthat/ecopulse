@@ -262,9 +262,12 @@ export default function AQIPage() {
         {error && (
           <div className="flex items-start gap-3 p-4 bg-red-50 border border-red-200 rounded-xl text-red-800 mb-6">
             <AlertCircle size={20} className="shrink-0 mt-0.5" />
-            <div>
+            <div className="flex-1">
               <p className="font-semibold">Error</p>
               <p className="text-sm">{error}</p>
+              <p className="text-xs text-red-600 mt-2">
+                Try searching for major cities like "New York", "London", "Tokyo", or "Mumbai"
+              </p>
             </div>
           </div>
         )}
@@ -425,14 +428,18 @@ export default function AQIPage() {
                       </div>
                       <span className={`badge ${level.bg} ${level.text} text-xs`}>{level.label}</span>
                     </div>
-                    <div className="h-2 bg-forest-100 rounded-full mb-3">
-                      <div 
-                        className={`h-2 rounded-full ${level.dot}`}
-                        style={{ width: `${percentage}%` }}
-                      />
+                    <div className="mb-2">
+                      <div className="flex items-baseline justify-between mb-1">
+                        <span className="text-2xl font-display font-bold text-forest-900">{value.toFixed(1)}</span>
+                        <span className="text-xs text-forest-500">{info.unit}</span>
+                      </div>
+                      <div className="h-2 bg-forest-100 rounded-full">
+                        <div 
+                          className={`h-2 rounded-full ${level.dot}`}
+                          style={{ width: `${percentage}%` }}
+                        />
+                      </div>
                     </div>
-                    <p className="text-2xl font-display font-bold text-forest-900">{value.toFixed(1)}</p>
-                    <p className="text-xs text-forest-400 mt-1">{info.unit}</p>
                   </div>
                 )
               })}
@@ -465,10 +472,15 @@ export default function AQIPage() {
                 />
                 <Tooltip 
                   contentStyle={{ 
-                    backgroundColor: '#fff', 
-                    border: '1px solid #d8f3dc',
-                    borderRadius: '8px'
+                    backgroundColor: '#2d6a4f', 
+                    border: 'none',
+                    borderRadius: '8px',
+                    color: '#fff',
+                    padding: '8px 12px',
+                    fontSize: '13px'
                   }}
+                  labelStyle={{ color: '#d8f3dc', marginBottom: '4px' }}
+                  itemStyle={{ color: '#fff' }}
                 />
                 <Area 
                   type="monotone" 

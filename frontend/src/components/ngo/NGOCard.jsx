@@ -46,7 +46,7 @@ export default function NGOCard({ ngo }) {
           href={ngo.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-ghost px-4 gap-2 text-sm"
+          className="px-4 py-2 border border-forest-300 text-forest-700 hover:bg-forest-50 rounded-lg transition-colors flex items-center gap-2 text-sm"
           title="Visit website"
         >
           <Globe size={14} />
