@@ -3,6 +3,7 @@ import { Wind, MapPin, Search, Loader2, AlertCircle, RefreshCw } from 'lucide-re
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents, CircleMarker } from 'react-leaflet'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 import { fetchCurrentAQI, fetchAQIHistory, geocodeCity, getAQILevel, getPollutantInfo } from '@utils/aqiService'
+import apiClient from '@utils/apiClient'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 
@@ -67,9 +68,8 @@ export default function AQIPage() {
       
       // Fetch nearby stations (non-blocking)
       try {
-        const nearbyResponse = await fetch(`http://localhost:4000/api/aqi/nearby?lat=${lat}&lon=${lon}`)
-        const nearbyData = await nearbyResponse.json()
-        setNearbyStations(nearbyData.stations || [])
+        const nearbyResponse = await apiClient.get(`/aqi/nearby?lat=${lat}&lon=${lon}`)
+        setNearbyStations(nearbyResponse.data.stations || [])
       } catch (err) {
         console.warn('Could not fetch nearby stations:', err)
         setNearbyStations([])
