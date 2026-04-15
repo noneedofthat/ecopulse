@@ -37,7 +37,7 @@ export default function SummaryModal({ article, onClose }) {
       // Create abort controller for cleanup
       abortControllerRef.current = new AbortController()
 
-      const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000/api'
+      const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
       const response = await fetch(`${API_BASE}/ai/summary`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
