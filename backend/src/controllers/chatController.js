@@ -53,11 +53,10 @@ Example responses:
 - For supporting causes: "Visit our NGO page to discover environmental organizations you can support! We've curated a list of both international and Indian NGOs working on wildlife, climate, forests, and more."`
     })
 
-    // Convert history to Gemini format, excluding the initial assistant greeting
-    // and ensuring first message is from user
+    // Convert history to Gemini format
+    // Frontend already filters out the initial greeting
     const chatHistory = history
-      .filter(msg => msg.role !== 'system') // Remove system messages
-      .slice(1) // Skip the initial assistant greeting
+      .filter(msg => msg.role !== 'system') // Remove system messages if any
       .map(msg => ({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.content }],
