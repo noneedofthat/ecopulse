@@ -148,7 +148,10 @@ export default function AQIPage() {
         setLoading(false)
       }
     } catch (err) {
-      console.error('Search error:', err)
+      // Only log unexpected errors (not 404 city not found)
+      if (err.response?.status !== 404) {
+        console.error('Search error:', err)
+      }
       setError(err.response?.data?.error || 'Failed to search city. Try a different city name.')
       setLoading(false)
     }
@@ -161,8 +164,11 @@ export default function AQIPage() {
       setMapZoom(12)
       await fetchAQIData(lat, lon)
     } catch (err) {
-      console.error('Map click error:', err)
-      // Don't show error for map clicks, just log it
+      // Don't log 404 errors (location not found), only unexpected errors
+      if (err.response?.status !== 404) {
+        console.error('Map click error:', err)
+      }
+      // Don't show error for map clicks, just silently fail
     }
   }
 
