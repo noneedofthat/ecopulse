@@ -17,7 +17,7 @@ Real-time environmental news, global air quality monitoring, and conservation re
 
 <br/>
 
-![Backend](https://img.shields.io/badge/Backend-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
+![Backend](https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![Frontend](https://img.shields.io/badge/Frontend-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 <br/>
@@ -49,7 +49,7 @@ Real-time environmental news, global air quality monitoring, and conservation re
 | **Database & Auth** | Supabase (PostgreSQL + Auth) |
 | **APIs** | The Guardian API, Google Gemini 2.5 Flash, OpenWeatherMap API |
 | **Maps & Charts** | React Leaflet, Recharts |
-| **Deployment** | Vercel (Frontend), Railway (Backend) |
+| **Deployment** | Vercel (Frontend), Render (Backend) |
 
 ---
 
@@ -78,18 +78,21 @@ cd ../frontend && npm install
 
 **Backend** (`backend/.env`):
 ```env
+NODE_ENV=development
 PORT=4000
 CLIENT_URL=http://localhost:5173
+JWT_SECRET=your_secret_key
+JWT_EXPIRES_IN=7d
 GUARDIAN_API_KEY=your_key
 GEMINI_API_KEY=your_key
 OPENWEATHER_API_KEY=your_key
 SUPABASE_URL=your_url
-SUPABASE_ANON_KEY=your_key
 SUPABASE_SERVICE_KEY=your_key
 ```
 
 **Frontend** (`frontend/.env.local`):
 ```env
+VITE_API_URL=http://localhost:4000/api
 VITE_SUPABASE_URL=your_url
 VITE_SUPABASE_ANON_KEY=your_key
 ```
@@ -109,7 +112,39 @@ cd frontend && npm run dev
 
 ## Deployment
 
-See [DEPLOY_QUICK_START.md](DEPLOY_QUICK_START.md) for deployment instructions.
+### Current Setup
+
+- **Frontend**: Deployed on Vercel
+- **Backend**: Deployed on Render
+- **Database**: Supabase
+
+### Deploy Backend to Render
+
+**Quick Guide:** See [RENDER_BACKEND_ONLY.md](RENDER_BACKEND_ONLY.md) for step-by-step backend deployment.
+
+**Key Steps:**
+1. Create Web Service on Render
+2. Connect GitHub repository
+3. Set root directory to `backend`
+4. Add environment variables
+5. Deploy
+
+**Important:** Set `VITE_API_URL` in Vercel to:
+```
+https://your-backend.onrender.com/api
+```
+
+### Deploy Frontend to Vercel
+
+1. Import project from GitHub
+2. Set root directory to `frontend`
+3. Add environment variables
+4. Deploy
+
+**Full Documentation:**
+- [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md) - Complete deployment guide
+- [RENDER_QUICK_START.md](RENDER_QUICK_START.md) - Quick start guide
+- [PLATFORM_COMPARISON.md](PLATFORM_COMPARISON.md) - Platform comparison
 
 **Live Demo:** [https://ecopulse-frontend-cqtc.vercel.app](https://ecopulse-frontend-cqtc.vercel.app)
 
