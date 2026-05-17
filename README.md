@@ -118,33 +118,20 @@ cd frontend && npm run dev
 - **Backend**: Deployed on Render
 - **Database**: Supabase
 
-### Deploy Backend to Render
+### Quick Deploy
 
-**Quick Guide:** See [RENDER_BACKEND_ONLY.md](RENDER_BACKEND_ONLY.md) for step-by-step backend deployment.
-
-**Key Steps:**
-1. Create Web Service on Render
-2. Connect GitHub repository
-3. Set root directory to `backend`
-4. Add environment variables
-5. Deploy
+**Backend to Render:** See [docs/RENDER_BACKEND_ONLY.md](docs/RENDER_BACKEND_ONLY.md)
 
 **Important:** Set `VITE_API_URL` in Vercel to:
 ```
 https://your-backend.onrender.com/api
 ```
 
-### Deploy Frontend to Vercel
+### Full Documentation
 
-1. Import project from GitHub
-2. Set root directory to `frontend`
-3. Add environment variables
-4. Deploy
-
-**Full Documentation:**
-- [RENDER_DEPLOYMENT.md](RENDER_DEPLOYMENT.md) - Complete deployment guide
-- [RENDER_QUICK_START.md](RENDER_QUICK_START.md) - Quick start guide
-- [PLATFORM_COMPARISON.md](PLATFORM_COMPARISON.md) - Platform comparison
+- [Render Backend Deployment](docs/RENDER_BACKEND_ONLY.md) - Deploy backend to Render
+- [Platform Comparison](docs/PLATFORM_COMPARISON.md) - Compare deployment platforms
+- [Design System](docs/DESIGN_SYSTEM.md) - Design specifications
 
 **Live Demo:** [https://ecopulse-frontend-cqtc.vercel.app](https://ecopulse-frontend-cqtc.vercel.app)
 
